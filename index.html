@@ -1,0 +1,556 @@
+<!doctype html>
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<meta charset="utf-8">
+<title>Base de datos simples y avanzadas </title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema10.min.css"/
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--<script src="js/acciones.js"></script>-->
+<script src="phonegap.js"></script>
+</script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+</script>
+</head><body onLoad="MM_preloadImages('imagenes/tabla-alumnos.jpg','imagenes/datos2.jpg','imagenes/dbase2.jpg','imagenes/filemaker2.jpg','imagenes/visualfoxpro2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Base de datos Simples y Avanzadas</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Base de Datos </h1>
+<div>
+<h2><p>Introduccion a "Base de Datos"</p></h2>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust1','','imagenes/tabla bd.JPG',0)"><img src="imagenes/imagenesVis/base-de-datos-sql.jpg" width="70%" height="50%" id="sust1"></a></p>
+</div><div></div></div></div>
+
+
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es una Base de Datos?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Cómo crear una base de datos?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Partes de una base de datos en Access</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de datos para bases de datos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es una base de datos simple?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Conceptos basicos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Modelos de base de datos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Introduccion a SQL</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es dBase, Fileaker Pro y VisualFox Pro ?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Bases de datos relacionales</h2>
+</a>
+</li>
+</ul></div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<div>
+<h4>Aplicacion Diez</h4>
+<h4>Gustavo Jimenez Puente</h4>
+</div></div></div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>¿Qué es una Base de Datos?</h1>
+</div>
+<div data-role="content" align="center">
+<h1><p>¿Qué es una base de datos?</p></h1>
+<h2><p>Una base de datos es una herramienta para recopilar y organizar información. Las bases de datos pueden almacenar información sobre personas, productos, pedidos u otras cosas. Muchas bases de datos comienzan como una lista en una hoja de cálculo o en un programa de procesamiento de texto.</p></h2>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Ejemplos de una Base de Datos</h2>
+<div>
+<p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust2','','imagenes/tabla-alumnos.jpg',1)"><img src="imagenes/imagenesVis/bases.jpg" width="70%" height="50%" id="sust2"></a></p>
+</div>
+<div>
+</div>
+</div>
+<h2><p>Una base de datos computarizada es un contenedor de objetos. Una base de datos puede contener más de una tabla. Por ejemplo, un sistema de seguimiento de inventario que usa tres tablas no son tres bases de datos, sino una base de datos que contiene tres tablas. </p></h2>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;" data-role="controlgroup" data-type="vertical" data-theme="a">
+<a href="https://support.office.com/es-es/article/conceptos-b%C3%A1sicos-sobre-bases-de-datos-a849ac16-07c7-4a31-9948-3c8c94a7c204" data-role="button">
+<h3>Más sobre qué es una base de datos</h3>
+</a>
+</div></div></div></div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div></div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>¿Cómo crear una base de datos?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><p>Para poder crear una base de datos computarisada es necesario un programa con un sistema de administración de bases de datos (DBMS) para que mientras agreges datos y la lista se haga más grande no aparescan redundancias e inconsistencias en los datos. </p></h2>
+<p><img src="imagenes/imagenesVis/DBMS.jpg"imagenes/DBMS.jpg" width="50%" height="40%"></p>
+<h2><p>Un buen ejemplo de un administrador de base de datos (DBMS) es ACCESS</p>
+<p><img src="imagenes/imagenesVis/access.jpg"imagenes/access.jpg" width="40%" height="30%"></p>
+<p>Una base de datos de Access almacena sus tablas en un solo archivo, junto con otros objetos como formularios, informes, macros y módulos. Las bases de datos creadas en el formato Access 2007 (que también usan Access 2016, Access 2013 y Access 2010) tienen la extensión de archivo .accdb y las bases de datos creadas en formatos anteriores de Access tienen la extensión de archivo .mdb.</p></h2>
+</div><div></div></div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div></div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Partes de una Base de datos</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>
+<ul>
+<li><p>Tablas:</p>Una tabla de base de datos es similar en apariencia a una hoja de cálculo en cuanto a que los datos se almacenan en filas y columnas. Por ende, es bastante fácil importar una hoja de cálculo en una tabla de base de datos. La principal diferencia entre almacenar los datos en una hoja de cálculo y almacenarlos en una base de datos es la forma en la que están organizados los datos.</li>
+<p><img src="imagenes/tablas.png" width="70%" height="60%"></p>
+<li><p>Formularios:</p>
+Los formularios permiten crear una interfaz de usuario en la que puede escribir y modificar datos. Los formularios a menudo contienen botones de comandos y otros controles que realizan distintas tareas. Puede crear una base de datos sin usar formularios con tan solo modificar los datos en las hojas de datos de la tabla. </li>
+<p><img src="imagenes/formularios.jpg" width="70%" height="60%"></p>
+<li><p>Informes:</p>
+Los informes se usan para dar formato a los datos, resumirlos y presentarlos. Por lo general, un informe responde a una pregunta específica. Se puede ejecutar un informe por vez y siempre se reflejan los datos actuales de la base de datos. Generalmente, se les da formato a los informes para imprimirlos, pero también pueden verse en pantalla, exportarse a otro programa o enviarse como datos adjuntos en un correo electrónico.</li>
+<p><img src="imagenes/informe.png" width="70%" height="60%"></p>
+<li><p>Consultas:</p>
+Las consultas pueden realizar diversas funciones en una base de datos. La función más común es recuperar datos específicos de las tablas. Los datos que quiere ver generalmente están distribuidos en varias tablas y las consultas le permiten verlos en una única hoja de datos. Ciertas consultas son "actualizables", es decir, puede modificar los datos de las tablas subyacentes mediante la hoja de datos de la consulta.</li>
+<p><img src="imagenes/imagenesVis/consultas.png" width="70%" height="60%"></p>
+<li><p>Macros:</p>
+Las macros en Access pueden considerarse un lenguaje de programación simplificado que puede usar para agregar funciones a la base de datos. Por ejemplo, puede adjuntar una macro a un botón de comando en un formulario para que la macro se ejecute cada vez que se hace clic en ese botón. Las macros contienen acciones que ejecutan tareas, como abrir un informe, ejecutar una consulta o cerrar la base de datos. </li>
+<p><img src="imagenes/macros.jpg" width="70%" height="60%"></p>
+<li><p>Módulos:</p>
+Los módulos, como las macros, son objetos que puede usar para agregar funciones a la base de datos. Mientras que las macros se crean en Access mediante la elección de una lista de acciones de macro, los módulos se escriben en el lenguaje de programación Visual Basic para Aplicaciones (VBA).Un módulo es una colección de declaraciones, instrucciones y procedimientos que se almacenan juntos como una unidad. Un módulo puede ser un módulo de clase o un módulo estándar.</li>
+<p><img src="imagenes/modulos.jpg" width="60%" height="50%"></p>
+</ul>
+<div>
+<p>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/access.jpg" alt="access" title="access" id="wows1_0"/></li>
+		<li><img src="data1/images/basededatossql.jpg" alt="base-de-datos-sql" title="base-de-datos-sql" id="wows1_1"/></li>
+		<li><img src="data1/images/bases.jpg" alt="bases" title="bases" id="wows1_2"/></li>
+		<li><img src="data1/images/campos.png" alt="campos" title="campos" id="wows1_3"/></li>
+		<li><img src="data1/images/consultas.png" alt="consultas" title="consultas" id="wows1_4"/></li>
+		<li><img src="data1/images/datos1.jpg" alt="datos1" title="datos1" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/datos2.jpg" alt="http://wowslider.com/" title="datos2" id="wows1_6"/></a></li>
+		<li><img src="data1/images/dbms.jpg" alt="DBMS" title="DBMS" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="access"><span><img src="data1/tooltips/access.jpg" alt="access"/>1</span></a>
+		<a href="#" title="base-de-datos-sql"><span><img src="data1/tooltips/basededatossql.jpg" alt="base-de-datos-sql"/>2</span></a>
+		<a href="#" title="bases"><span><img src="data1/tooltips/bases.jpg" alt="bases"/>3</span></a>
+		<a href="#" title="campos"><span><img src="data1/tooltips/campos.png" alt="campos"/>4</span></a>
+		<a href="#" title="consultas"><span><img src="data1/tooltips/consultas.png" alt="consultas"/>5</span></a>
+		<a href="#" title="datos1"><span><img src="data1/tooltips/datos1.jpg" alt="datos1"/>6</span></a>
+		<a href="#" title="datos2"><span><img src="data1/tooltips/datos2.jpg" alt="datos2"/>7</span></a>
+		<a href="#" title="DBMS"><span><img src="data1/tooltips/dbms.jpg" alt="DBMS"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</p>
+</div>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="https://support.office.com/es-es/article/conceptos-b%C3%A1sicos-sobre-bases-de-datos-a849ac16-07c7-4a31-9948-3c8c94a7c204#__toc257378454" data-role="button">
+<h3>Mas sobre las partes de una base de datos</h3>
+</a>
+</li>
+</ul></div></div></div></div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div></div>
+
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Tipos de datos para base de datos</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Ejemplos de Datos</h2>
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust3','','imagenes/datos2.jpg',1)"><img src="imagenes/imagenesVis/datos1.jpg" width="70%" height="60%" id="sust3"></a></div>
+</div>
+</div>
+<ul><h2>
+<li><p>Texto corto:</p>
+ su uso es para ingresar datos alfanuméricos (nombres, títulos, etc.) y cuenta con un tamaño de hasta 255 caracteres.</li>
+ <p><img src="imagenes/texto.jpg" width="50%" height="50%"></p>
+<li><p>Texto largo:</p> 
+Ingresa grandes cantidades de datos alfanuméricos: oraciones y párrafos. Vea El tipo de datos Memo ahora se llama "Texto largo" para obtener más información sobre los detalles de los textos largos. Y puede tener un tamaño de hasta 1 gigabyte (GB) aproximadamente</li>
+<li><p>Número:</p>
+Sirve para ingresar datos numéricos. Y  puede tener un tamaño de 1, 2, 4, 8 o 16 bytes.</li>
+<p><img src="imagenes/numero.jpg" width="50%" height="40%"></p>
+<li><p>Número grande:</p>
+ Ingresa datos numéricos. Y  tiene un tamaño de hasta 8 bytes.</li>
+<li><p>Fecha y hora:</p>
+Ingresa fechas y horas. Tiene un tamaño de hastas 8 bytes.</li>
+<p><img src="imagenes/fecha y hora.png" width="50%" height="40%"></p>
+<li><p>Moneda:</p>
+Ingresa datos monetarios, almacenados con 4 posiciones decimales de precisión. Tiene un tamaño de hasta8 bytes.</li>
+<p><img src="imagenes/moneda.jpg" width="50%" height="40%"></p>
+<li><p>Autonumeración:</p>
+Ingresa un valor único generado por Access para cada registro nuevo. Con un tamaño de 4 bytes (16 bytes para el Id. de replicación).</li>
+<p><img src="imagenes/Autonumeracion.jpg" width="50%" height="40%"></p>
+<li><p>Hipervínculo:</p>
+Ingresa una dirección de vínculo a un documento o archivo en Internet, en una intranet, en una red de área local (LAN) o en el equipo local. Tiene un tamaño de Hasta 8192 (cada parte de un tipo de datos Hipervínculo puede contener un máximo de 2048 caracteres).</li>
+<p><img src="imagenes/hiper.jpg" width="50%" height="40%"></p>
+<li><p>Asistente para búsquedas:</p>
+La entrada del Asistente para búsquedas en la columna de tipo de datos en la vista Diseño no es realmente un tipo de datos. Al elegir esta entrada, inicie el Asistente para ayudarle a definir un campo de búsqueda simple o complejo. Tiene un tamaño que depende del tipo de datos del campo de búsqueda.</li>
+<p><img src="imagenes/sino.jpg" width="50%" height="40%"></p>
+</h2>
+</ul>
+<div>
+
+</div>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="https://support.office.com/es-es/article/tipos-de-datos-para-bases-de-datos-de-escritorio-de-access-df2b83ba-cef6-436d-b679-3418f622e482" data-role="button">
+<h3>Para más información sobre los tipos de datos</h3>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>¿Qué es una base de datos simple?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>¿QUÉ ES UNA BASE DE DATOS SIMPLE?</h2>
+<div>
+<h3>Las bases de datos simples son aquellas que están formadas por una sola tabla de datos. Este tipo de bases de datos son muy fáciles de crear y utilizar y cubren la mayoría de necesidades de los particulares. Por ejemplo para crear y gestionar una agenda telefónica bastan con los conocimientos de Access Imprescindible para crear una tabla como esta.
+<br>
+Para una empresa necesitaremos, por ejemplo llevar al día no solo la agenda con los datos de los clientes, de los proveedores. Si no también llevar la relación de los productos que les hemos comprado o vendido, y esto debe verse reflejado en nuestro control del almacén.
+</h3>
+<p><img src="imagenes/tabla bd.JPG" width="60%" height="40%"></p>
+</div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h2>Más información de Bases de datos simples</h2>
+<div>
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="a">
+<li class="ui-first-child ui-last-child">
+<a href="http://www.aulafacil.com/cursos/l13139/informatica/excel-word-powerpoint-access/access-2000-avanzado/problemas-con-las-bases-de-datos-simples" data-role="button">
+<h3>¡click aquí!</h3>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Conceptos basicos de la una base de datos simple</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<ul><h3>
+<li> Sistema: <br> conjunto de cosas ordenadamente relacionadas entre sí que contribuyen a un objetivo.</li>
+<p><img src="imagenes/sistema.png" width="70%" height="60%"></p>
+<li> Campos: <br> es la unidad más pequeña de datos almacenados</li> 
+<P><img src="imagenes/imagenesVis/campos.png" width="70%" height="50%"></P>
+<li> Registro: <br> es un conjunto de campos relacionados, tambien conocido como Tupla</li>
+<img src="imagenes/registros.jpg" width="70%" height="50%">
+<li> Tabla: <br> es un conjunto de registros</li>
+<img src="imagenes/imagenesVis/bases.jpg" width="70%" height="50%"></h3>
+</ul>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Moldelos de base de datos</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2>¿Qué son?</h2>
+<h3>Es una descripcion de algo conocido como contenedor de datos, asi como de los métedos para almacenar y recuperar información de esos contenedores.</h3><p>
+<h3> Lo modelos de datos permiten la implementación de un sistema eficiente de base de datos</h3></p>
+<br>
+<h2>Modelos</h2>
+<ul><h3>
+<li>Entidad Relación</li>
+<li>Grafo Relaciónal</li>
+<li>Jérarquico</li>
+<li>Relacional</li>
+<li>De red</li>
+<li>Orintada a objetos</li>
+<li>Documentales</li>
+<li>Deductivas</li>
+<li>Distribuidas</li>
+</h3></ul>
+<p><img src="imagenes/ImagenesVis2/DB_jerarquica.png" width="60%" height="45%"></p>
+</div>
+</div>
+<div>
+<p>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/deductivas.jpg" alt="Deductivas" title="Deductivas" id="wows2_0"/></li>
+		<li><img src="data2/images/distribuidas.jpg" alt="distribuidas" title="distribuidas" id="wows2_1"/></li>
+		<li><img src="data2/images/er.png" alt="e-r" title="e-r" id="wows2_2"/></li>
+		<li><img src="data2/images/modelo_relacional.png" alt="modelo_relacional" title="modelo_relacional" id="wows2_3"/></li>
+		<li><img src="data2/images/db_jerarquica.png" alt="DB_jerarquica" title="DB_jerarquica" id="wows2_4"/></li>
+		<li><img src="data2/images/modelografo.jpg" alt="modelo-grafo" title="modelo-grafo" id="wows2_5"/></li>
+		<li><img src="data2/images/oientada_a_objetos.png" alt="oientada a objetos" title="oientada a objetos" id="wows2_6"/></li>
+		<li><a href="http://wowslider.net"><img src="data2/images/red.jpg" alt="http://wowslider.net/" title="red" id="wows2_7"/></a></li>
+		<li><img src="data2/images/sql.png" alt="sql" title="sql" id="wows2_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Deductivas"><span><img src="data2/tooltips/deductivas.jpg" alt="Deductivas"/>1</span></a>
+		<a href="#" title="distribuidas"><span><img src="data2/tooltips/distribuidas.jpg" alt="distribuidas"/>2</span></a>
+		<a href="#" title="e-r"><span><img src="data2/tooltips/er.png" alt="e-r"/>3</span></a>
+		<a href="#" title="modelo_relacional"><span><img src="data2/tooltips/modelo_relacional.png" alt="modelo_relacional"/>4</span></a>
+		<a href="#" title="DB_jerarquica"><span><img src="data2/tooltips/db_jerarquica.png" alt="DB_jerarquica"/>5</span></a>
+		<a href="#" title="modelo-grafo"><span><img src="data2/tooltips/modelografo.jpg" alt="modelo-grafo"/>6</span></a>
+		<a href="#" title="oientada a objetos"><span><img src="data2/tooltips/oientada_a_objetos.png" alt="oientada a objetos"/>7</span></a>
+		<a href="#" title="red"><span><img src="data2/tooltips/red.jpg" alt="red"/>8</span></a>
+		<a href="#" title="sql"><span><img src="data2/tooltips/sql.png" alt="sql"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">wowslider.net</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</p>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Base de datos avanzadas (Introducción a MySQL)</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h3>MySQL es un sistema gestor de base de datos relacional, basado en el lenguaje SQL que nos permite realizar consultas a nuestras bases de datos, para mostrar, insertar, actualizar y borrar datos.</h3>  	
+<p><img src="imagenes/ImagenesVis2/sql.png" width="60%" height="50%"></p> 
+<ul><h3>
+<li>Modelo entidad-relación
+<br>
+Es un  modelo de datos que permite relacionar cualquier abstraccion, percepción y conocimiento en un sistema de informacion formado por un conjunto de objetos denomidados entidades y relaciones.</li>
+<br>
+<li>Se utiliza para crear objetos QueryDef, como el argumento de origen del método
+OpenRecordSet y como la propiedad RecordSource del control de datos. También
+se puede utilizar con el método Execute para crear y manipular directamente
+las bases de datos Jet y crear consultas SQL
+de paso a través para manipular bases de datos remotas cliente – servidor.</li>
+</h3>
+</ul>
+<img src="imagenes/querydef.png" width="60%" height="50%">
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;" data-role="controlgroup" data-type="vertical" data-theme="a">
+<a href="http://www.maestrosdelweb.com/tutsql1/" data-role="button">
+<h2>Más sobre introducción a SQL</h2>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>¿Qué es dBase, filemaker pro y  Visual fox pro</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><p>Fue el pirmer sistema de gestion de base de datos usado ampliamente para microcomputadoras Publicado por Asthon-tate para CP/M.</p>
+<p>El formato subyacente de dBase, el archivo dbf es ampliamente utilizado en otras aplicaciones que necesitan un formato simple para almacenar datos estructurados.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust4','','imagenes/dbase2.jpg',1)"><img src="imagenes/dbase.jpg" width="70%" height="50%" id="sust4"></a>
+<p>Filmaker Pro es una aplicacion multiplataforma de base de datos relacionar, integra un motor de la base de datos con la interfaz, lo que permite a los usuarios modificar la base de datos al arrastrar elementos a las pantallas.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust5','','imagenes/filemaker2.jpg',1)"><img src="imagenes/filemaker.jpg" width="70%" height="50%" id="sust5"></a> 
+<p>Visual Fax Pro es un lenguaje de programacion procedual, orientado a objetos que posee un sistema gestor de base de datosy un sistema administrador de base de datos producido por microsoft.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image74','','imagenes/visualfoxpro2.jpg',1)"><img src="imagenes/visualfoxpro.jpg" width="70%" height="50%" id="Image74"></a></h2>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, JPG</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina10" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Bases de datos relacionales</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><p>La base de datos relacional (BDR) es un tipo de base de datos (BD) que cumple con el modelo relacional (el modelo más utilizado actualmente para implementar las BD ya planificadas).
+Tras ser postuladas sus bases en 1970 por Edgar Frank Codd​ de los laboratorios IBM en San José (California), no tardó en consolidarse como un nuevo paradigma en los modelos de base de datos.</p></h2>
+
+<img src="imagenes/relac.jpg" width="70%" height="60%">
+<h2>Caracteristicas</h2>
+<ul>
+<li> Una base de datos se compone de varias tablas o relaciones.</li>
+<li>No pueden existir dos tablas con el mismo nombre ni registro.</li>
+<li>Cada tabla es a su vez un conjunto de campos (columnas) y registros (filas).</li>
+<li>La relación entre una tabla padre y un hijo se lleva a cabo por medio de las claves primarias y claves foráneas (o ajenas).</li>
+<li>Las claves primarias son la clave principal de un registro dentro de una tabla y estas deben cumplir con la integridad de datos.</li>
+<li>Las claves ajenas se colocan en la tabla hija, contienen el mismo valor que la clave primaria del registro padre; por medio de estas se hacen las formas relacionales.</li>
+</ul>
+</p></h2>
+
+<img src="imagenes/relacio.jpg" width="60%" height="50%"></div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+</div>
+<h4>Desarrollada por: Gustavo Jimenez Puente 4° "G" <p>(Desarrolla Aplicaciones Moviles) Docente: José Antonio Goméz Hernandez<p></h4>
+</div>
+</div>
+
+</body>
+</html>
